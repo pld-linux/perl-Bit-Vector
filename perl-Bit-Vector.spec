@@ -1,11 +1,26 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Bit
-%define	pnam	Vector
-Summary:	Bit::Vector perl module
-Summary(pl):	Modu³ perla Bit::Vector
+%define		pdir	Bit
+%define		pnam	Vector
+Summary:	Bit::Vector Perl module
+Summary(cs):	Modul Bit::Vector pro Perl
+Summary(da):	Perlmodul Bit::Vector
+Summary(de):	Bit::Vector Perl Modul
+Summary(es):	Módulo de Perl Bit::Vector
+Summary(fr):	Module Perl Bit::Vector
+Summary(it):	Modulo di Perl Bit::Vector
+Summary(ja):	Bit::Vector Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Bit::Vector ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Bit::Vector
+Summary(pl):	Modu³ Perla Bit::Vector
+Summary(pt):	Módulo de Perl Bit::Vector
+Summary(pt_BR):	Módulo Perl Bit::Vector
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Bit::Vector
+Summary(sv):	Bit::Vector Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Bit::Vector
+Summary(zh_CN):	Bit::Vector Perl Ä£¿é
 Name:		perl-Bit-Vector
 Version:	6.1
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
