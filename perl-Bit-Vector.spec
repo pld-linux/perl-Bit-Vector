@@ -42,8 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %{perl_sitearch}/Bit/Vector.pm
 %{perl_sitearch}/Bit/Vector/Overload.pm
-
-#%{perl_sitearch}/Bit/Vector/Overload.pod
 %dir %{perl_sitearch}/auto/Bit/Vector
 %{perl_sitearch}/auto/Bit/Vector/Vector.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Bit/Vector/Vector.so
