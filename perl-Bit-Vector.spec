@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Bit
-%define		pnam	Vector
+%define	pdir	Bit
+%define	pnam	Vector
 Summary:	Bit::Vector - efficient base class implementing bit vectors
 Summary(cs):	Bit::Vector - modul pro vysoce výkonné manipulace bitových vektorù v Perlu
 Summary(da):	Bit::Vector - et modul for højydelsehåndtering af bitvektorer i Perl
