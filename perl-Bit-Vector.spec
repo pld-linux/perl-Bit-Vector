@@ -2,8 +2,8 @@
 Summary:	Bit-Vector perl module
 Summary(pl):	Modu³ perla Bit-Vector
 Name:		perl-Bit-Vector
-Version:	6.0
-Release:	3
+Version:	6.1
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
