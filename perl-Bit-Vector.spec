@@ -9,13 +9,13 @@ Summary:	Bit::Vector - efficient base class implementing bit vectors
 Summary(pl):	Bit::Vector - wydajna klasa bazowa implementuj±ca wektory bitowe
 Name:		perl-Bit-Vector
 Version:	6.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-devel
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
