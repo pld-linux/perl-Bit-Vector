@@ -5,29 +5,14 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Bit
 %define		pnam	Vector
-Summary:	Bit::Vector Perl module
-Summary(cs):	Modul Bit::Vector pro Perl
-Summary(da):	Perlmodul Bit::Vector
-Summary(de):	Bit::Vector Perl Modul
-Summary(es):	Módulo de Perl Bit::Vector
-Summary(fr):	Module Perl Bit::Vector
-Summary(it):	Modulo di Perl Bit::Vector
-Summary(ja):	Bit::Vector Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Bit::Vector ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Bit::Vector
-Summary(pl):	Modu³ Perla Bit::Vector
-Summary(pt):	Módulo de Perl Bit::Vector
-Summary(pt_BR):	Módulo Perl Bit::Vector
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Bit::Vector
-Summary(sv):	Bit::Vector Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Bit::Vector
-Summary(zh_CN):	Bit::Vector Perl Ä£¿é
+Summary:	Bit::Vector - efficient base class implementing bit vectors
+Summary(pl):	Bit::Vector - wydajna klasa bazowa implementuj±ca wektory bitowe
 Name:		perl-Bit-Vector
 Version:	6.3
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-devel
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -37,8 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Bit::Vector - efficient base class implementing bit vectors.
 
 %description -l pl
-Modu³ perla Bit::Vector - wydajna klasa bazowa do implementowania
-wektorów bitowych.
+Bit::Vector - wydajna klasa bazowa, implementuj±ca wektory bitowe.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
