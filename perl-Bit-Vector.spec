@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Bit-Vector perl module
 Summary(pl):	Modu³ perla Bit-Vector
 Name:		perl-Bit-Vector
@@ -7,7 +8,8 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bit/Bit-Vector-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-12
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -16,14 +18,14 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 Bit-Vector - efficient base class implementing bit vectors.
 
 %description -l pl
-Modu³ perla Bit-Vector
+Modu³ perla Bit-Vector.
 
 %prep
 %setup -q -n Bit-Vector-%{version}
 
 %build
 perl Makefile.PL
-make
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
