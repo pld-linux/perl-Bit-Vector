@@ -47,6 +47,7 @@ perl Makefile.PL
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
+rm -f GNU_{,L}GPL.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,8 +58,9 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitearch}/Bit/Vector.pm
 %dir %{perl_sitearch}/Bit/Vector
 %{perl_sitearch}/Bit/Vector/Overload.pm
-%dir %{perl_sitearch}/auto/Bit/Vector
+%dir %{perl_sitearch}/Carp
 %{perl_sitearch}/Carp/Clan.pm
+%dir %{perl_sitearch}/auto/Bit/Vector
 %{perl_sitearch}/auto/Bit/Vector/Vector.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Bit/Vector/Vector.so
 %{_mandir}/man3/*
