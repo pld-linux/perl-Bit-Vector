@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Bit
 %define		pnam	Vector
@@ -19,8 +23,8 @@ Summary(sv):	Bit::Vector Perlmodul
 Summary(uk):	Модуль для Perl Bit::Vector
 Summary(zh_CN):	Bit::Vector Perl дё©И
 Name:		perl-Bit-Vector
-Version:	6.1
-Release:	8
+Version:	6.2
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -42,6 +46,8 @@ wektorСw bitowych.
 %build
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
