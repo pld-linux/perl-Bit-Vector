@@ -2,10 +2,11 @@
 Summary:	Bit-Vector perl module
 Summary(pl):	Modu³ perla Bit-Vector
 Name:		perl-Bit-Vector
-Version:	5.8
+Version:	6.0
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bit/Bit-Vector-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -25,22 +26,14 @@ Modu³ perla Bit-Vector.
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="$RPM_OPT_FLAGS"
+%{__make} OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Bit/Vector/*.so
-
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Bit/Vector
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv -f .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        *txt
+gzip -9nf *txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
