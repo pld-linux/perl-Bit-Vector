@@ -170,9 +170,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc *txt
 %{perl_vendorarch}/Bit/Vector.pm
 %dir %{perl_vendorarch}/Bit/Vector
-%{perl_vendorarch}/Bit/Vector/Overload.pm
-#%dir %{perl_vendorarch}/Carp
-#%{perl_vendorarch}/Carp/Clan.pm
+%{perl_vendorarch}/Bit/Vector/*.pm
 %dir %{perl_vendorarch}/auto/Bit/Vector
 %{perl_vendorarch}/auto/Bit/Vector/Vector.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Bit/Vector/Vector.so
