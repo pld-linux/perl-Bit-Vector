@@ -26,7 +26,7 @@ Release:	1
 # same as perl or (C library only) LGPL
 License:	GPL v1+ or Artistic or (C library only) LGPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	681433ff4f0b4da95dc5c560b7f5cc31
 %if %{with tests}
 BuildRequires:	perl-Carp-Clan
