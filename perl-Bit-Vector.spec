@@ -5,7 +5,7 @@ Summary:	Bit::Vector perl module
 Summary(pl):	Modu³ perla Bit::Vector
 Name:		perl-Bit-Vector
 Version:	6.1
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -43,6 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_sitearch}/Bit/Vector
 %{perl_sitearch}/Bit/Vector/Overload.pm
 %dir %{perl_sitearch}/auto/Bit/Vector
+%{perl_sitearch}/Carp/Clan.pm
 %{perl_sitearch}/auto/Bit/Vector/Vector.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Bit/Vector/Vector.so
 %{_mandir}/man3/*
