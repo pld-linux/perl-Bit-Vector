@@ -23,7 +23,7 @@ Summary(sv):	Bit::Vector Perlmodul
 Summary(uk):	Модуль для Perl Bit::Vector
 Summary(zh_CN):	Bit::Vector Perl дё©И
 Name:		perl-Bit-Vector
-Version:	6.2
+Version:	6.3
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
