@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Bit
 %define	pnam	Vector
-%include	/usr/lib/rpm/macros.perl
 Summary:	Bit-Vector perl module
 Summary(pl):	Modu³ perla Bit-Vector
 Name:		perl-Bit-Vector
 Version:	6.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +21,7 @@ Bit-Vector - efficient base class implementing bit vectors.
 Modu³ perla Bit-Vector.
 
 %prep
-%setup -q -n Bit-Vector-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
