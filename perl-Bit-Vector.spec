@@ -23,7 +23,8 @@ Summary(zh_CN):	Bit::Vector - 对位向量进行高性能 Perl 操作的模块。
 Name:		perl-Bit-Vector
 Version:	6.3
 Release:	3
-License:	GPL
+# same as perl or (C library only) LGPL
+License:	GPL v1+ or Artistic or (C library only) LGPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8b2bd3bf6fe5b0de4cbeaf0621b969f5
