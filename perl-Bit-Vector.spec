@@ -21,13 +21,16 @@ Summary(sv):	Bit::Vector - en modul för högprestandahantering av bitvektorer i P
 Summary(tr):	Bit::Vector - bit matrislerinin yüksek baþarýmlý hesaplamalarý için bir Perl modülü
 Summary(zh_CN):	Bit::Vector - ¶ÔÎ»ÏòÁ¿½øÐÐ¸ßÐÔÄÜ Perl ²Ù×÷µÄÄ£¿é¡£
 Name:		perl-Bit-Vector
-Version:	6.3
-Release:	4
+Version:	6.4
+Release:	1
 # same as perl or (C library only) LGPL
 License:	GPL v1+ or Artistic or (C library only) LGPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8b2bd3bf6fe5b0de4cbeaf0621b969f5
+# Source0-md5:	681433ff4f0b4da95dc5c560b7f5cc31
+%if %{with tests}
+BuildRequires:	perl-Carp-Clan
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -168,8 +171,8 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Bit/Vector.pm
 %dir %{perl_vendorarch}/Bit/Vector
 %{perl_vendorarch}/Bit/Vector/Overload.pm
-%dir %{perl_vendorarch}/Carp
-%{perl_vendorarch}/Carp/Clan.pm
+#%dir %{perl_vendorarch}/Carp
+#%{perl_vendorarch}/Carp/Clan.pm
 %dir %{perl_vendorarch}/auto/Bit/Vector
 %{perl_vendorarch}/auto/Bit/Vector/Vector.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Bit/Vector/Vector.so
