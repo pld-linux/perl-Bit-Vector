@@ -22,7 +22,7 @@ Summary(tr):	Bit::Vector - bit matrislerinin yüksek başarımlı hesaplamaları için
 Summary(zh_CN):	Bit::Vector - ¶ÔÎ»ÏòÁ¿½øĞĞ¸ßĞÔÄÜ Perl ²Ù×÷µÄÄ£¿é¡£
 Name:		perl-Bit-Vector
 Version:	6.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
