@@ -6,20 +6,20 @@
 %define		pdir	Bit
 %define		pnam	Vector
 Summary:	Bit::Vector - efficient base class implementing bit vectors
-Summary(cs.UTF-8):   Bit::Vector - modul pro vysoce výkonné manipulace bitových vektorů v Perlu
-Summary(da.UTF-8):   Bit::Vector - et modul for højydelsehåndtering af bitvektorer i Perl
-Summary(de.UTF-8):   Bit::Vector - ein Modul für das leistungsstarke Bearbeiten von bit-Vektoren durch Perl
-Summary(es.UTF-8):   Bit::Vector - módulo para la manipulación Perl de alta ejecución de muchos vectores
-Summary(fr.UTF-8):   Bit::Vector - module de manipulation Perl à haute performance de vecteurs bits
-Summary(it.UTF-8):   Bit::Vector - modulo per la gestione dei vettori bit ad alte prestazioni con Perl
-Summary(ja.UTF-8):   Bit::Vector ビットベクトルのハイパフォーマンスPerl操作の為のモジュールです。
-Summary(ko.UTF-8):   Bit::Vector bit 벡터를 고성능 Perl 조작하는데 사용되는 모듈
-Summary(pl.UTF-8):   Bit::Vector - wydajna klasa bazowa implementująca wektory bitowe
-Summary(pt.UTF-8):   Bit::Vector - um módulo para a manipulação rápida em Perl de vectores de "bits"
-Summary(pt_BR.UTF-8):   Bit::Vector - um módulo para a manipulação rápida em Perl de vectores de "bits"
-Summary(sv.UTF-8):   Bit::Vector - en modul för högprestandahantering av bitvektorer i Perl
-Summary(tr.UTF-8):   Bit::Vector - bit matrislerinin yüksek başarımlı hesaplamaları için bir Perl modülü
-Summary(zh_CN.UTF-8):   Bit::Vector - 对位向量进行高性能 Perl 操作的模块。
+Summary(cs.UTF-8):	Bit::Vector - modul pro vysoce výkonné manipulace bitových vektorů v Perlu
+Summary(da.UTF-8):	Bit::Vector - et modul for højydelsehåndtering af bitvektorer i Perl
+Summary(de.UTF-8):	Bit::Vector - ein Modul für das leistungsstarke Bearbeiten von bit-Vektoren durch Perl
+Summary(es.UTF-8):	Bit::Vector - módulo para la manipulación Perl de alta ejecución de muchos vectores
+Summary(fr.UTF-8):	Bit::Vector - module de manipulation Perl à haute performance de vecteurs bits
+Summary(it.UTF-8):	Bit::Vector - modulo per la gestione dei vettori bit ad alte prestazioni con Perl
+Summary(ja.UTF-8):	Bit::Vector ビットベクトルのハイパフォーマンスPerl操作の為のモジュールです。
+Summary(ko.UTF-8):	Bit::Vector bit 벡터를 고성능 Perl 조작하는데 사용되는 모듈
+Summary(pl.UTF-8):	Bit::Vector - wydajna klasa bazowa implementująca wektory bitowe
+Summary(pt.UTF-8):	Bit::Vector - um módulo para a manipulação rápida em Perl de vectores de "bits"
+Summary(pt_BR.UTF-8):	Bit::Vector - um módulo para a manipulação rápida em Perl de vectores de "bits"
+Summary(sv.UTF-8):	Bit::Vector - en modul för högprestandahantering av bitvektorer i Perl
+Summary(tr.UTF-8):	Bit::Vector - bit matrislerinin yüksek başarımlı hesaplamaları için bir Perl modülü
+Summary(zh_CN.UTF-8):	Bit::Vector - 对位向量进行高性能 Perl 操作的模块。
 Name:		perl-Bit-Vector
 Version:	6.4
 Release:	2
