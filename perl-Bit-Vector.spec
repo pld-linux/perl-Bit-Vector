@@ -151,6 +151,7 @@ Bit::Vector 是一个高效的 C 库。它允许您处理
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
