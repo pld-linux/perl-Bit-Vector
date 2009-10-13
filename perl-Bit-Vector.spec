@@ -21,13 +21,13 @@ Summary(sv.UTF-8):	Bit::Vector - en modul för högprestandahantering av bitvekt
 Summary(tr.UTF-8):	Bit::Vector - bit matrislerinin yüksek başarımlı hesaplamaları için bir Perl modülü
 Summary(zh_CN.UTF-8):	Bit::Vector - 对位向量进行高性能 Perl 操作的模块。
 Name:		perl-Bit-Vector
-Version:	7.0
+Version:	7.1
 Release:	1
 # same as perl or (C library only) LGPL
 License:	GPL v1+ or Artistic or (C library only) LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7b30893a1e6e9fcc47494e256f5bd2a6
+# Source0-md5:	164c8574b728f6171b2a6f564fcd2e50
 %if %{with tests}
 BuildRequires:	perl-Carp-Clan
 %endif
