@@ -26,10 +26,12 @@ Release:	5
 # same as perl or (C library only) LGPL
 License:	GPL v1+ or Artistic or (C library only) LGPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Bit/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	164c8574b728f6171b2a6f564fcd2e50
+URL:		http://search.cpan.org/dist/Bit-Vector/
 %if %{with tests}
-BuildRequires:	perl-Carp-Clan
+BuildRequires:	perl-Carp-Clan >= 5.3
+BuildRequires:	perl-Storable >= 2.21
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -161,18 +163,19 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-rm -f GNU_{,L}GPL.txt
+
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/Bit/Vector{,/*}.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *txt
+%doc CHANGES.txt CREDITS.txt README.txt
 %{perl_vendorarch}/Bit/Vector.pm
 %dir %{perl_vendorarch}/Bit/Vector
 %{perl_vendorarch}/Bit/Vector/*.pm
 %dir %{perl_vendorarch}/auto/Bit/Vector
 %{perl_vendorarch}/auto/Bit/Vector/Vector.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Bit/Vector/Vector.so
-%{_mandir}/man3/*
+%{_mandir}/man3/Bit::Vector*.3pm*
