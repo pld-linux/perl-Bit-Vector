@@ -176,6 +176,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/Bit/Vector
 %{perl_vendorarch}/Bit/Vector/*.pm
 %dir %{perl_vendorarch}/auto/Bit/Vector
-%{perl_vendorarch}/auto/Bit/Vector/Vector.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Bit/Vector/Vector.so
 %{_mandir}/man3/Bit::Vector*.3pm*
