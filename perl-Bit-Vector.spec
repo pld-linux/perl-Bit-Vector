@@ -22,7 +22,7 @@ Summary(tr.UTF-8):	Bit::Vector - bit matrislerinin yüksek başarımlı hesaplam
 Summary(zh_CN.UTF-8):	Bit::Vector - 对位向量进行高性能 Perl 操作的模块。
 Name:		perl-Bit-Vector
 Version:	7.3
-Release:	1
+Release:	2
 # same as perl or (C library only) LGPL
 License:	GPL v1+ or Artistic or (C library only) LGPL
 Group:		Development/Languages/Perl
