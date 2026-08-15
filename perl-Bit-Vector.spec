@@ -153,7 +153,7 @@ Bit::Vector 是一个高效的 C 库。它允许您处理
 	INSTALLDIRS=vendor
 %{__make} \
 	CC="%{__cc}" \
-	OPTIMIZE="%{rpmcflags}"
+	OPTIMIZE="%{rpmcflags} -std=gnu17"
 
 %{?with_tests:%{__make} test}
 
